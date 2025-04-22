@@ -1,14 +1,14 @@
 {
-  "name": "Api",
+  "name": "api",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "description": "",
   "dependencies": {
     "body-parser": "^2.2.0",

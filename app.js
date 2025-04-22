@@ -1,16 +1,17 @@
-import  express  from "express";
-import router from "./src/routes/categoriasRouter.js";
-import bodyParser from "body-parser";
+import express from 'express';
+import bodyParser from 'body-parser';
 
+import categoriasRouters from './routes/categoriasRoutes.js';
 
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}))
 
-app.use('/categorias', router);
+app.use('/categorias' , categoriasRouters); 
 
-  app.listen(3000, () => {
-    console.log("hola mundo");
+app.listen(3000 , () => {
+    //lo esta recibiendo desde git
+    console.log("Hola mundo");
     
-  });
+}); 
